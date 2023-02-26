@@ -1,0 +1,149 @@
+:root {
+    --border: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ul {
+	list-style: none;
+}
+button {
+    border: none;
+    background-color: transparent;
+}
+body {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+#window {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    width: calc((100vmin - (2 * var(--border))) * (16 / 9));
+    max-width: calc(100% - (2 * var(--border)));
+    background-color: lightgray;
+}
+#main-menu {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+#main-menu-title {
+    position: absolute;
+    color: black;
+    left: 10%;
+    top: 10%;
+    font-size: calc(0.05 * (100vmin - (2 * var(--border))));
+}
+#main-menu-options {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+#main-menu li {
+    margin-bottom: 10%;
+}
+#main-menu button {
+    font-weight: bold;
+    padding: 10%;
+    width: 120%;
+    text-align: left;
+    font-size: calc(0.02 * (100vmin - (2 * var(--border))));
+}
+#main-menu button:hover {
+    color: #3b3b3b;
+}
+#main-menu button:active {
+    color: #575757;
+}
+#main-menu-settings-panel {
+    position: absolute;
+    height: 90%;
+    width: 40%;
+    right: 0;
+    top: 5%;
+    border-top-left-radius: calc(0.03 * (100vmin - (2 * var(--border))));
+    border-bottom-left-radius: calc(0.03 * (100vmin - (2 * var(--border))));
+    background-color: lightblue;
+    font-size: calc(0.02 * (100vmin - (2 * var(--border))));
+}
+#main-menu-settings-panel h2 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+#main-menu-settings-panel ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    text-align: left;
+}
+#main-menu-settings-panel button {
+    padding: 5%;
+    margin: -5% 0 -5% 0;
+    width: 100%;
+    left: 0;
+    background-color: lightblue;
+}
+#main-menu-settings-panel button:hover {
+    background-color: rgb(148, 183, 196);
+}
+#main-menu-settings-panel button:active {
+    background-color: rgb(137, 170, 182);
+}
+#main-menu-saves-panel {
+    position: absolute;
+    height: 90%;
+    width: 40%;
+    right: 0;
+    top: 5%;
+    border-top-left-radius: calc(0.03 * (100vmin - (2 * var(--border))));
+    border-bottom-left-radius: calc(0.03 * (100vmin - (2 * var(--border))));
+    background-color: lightblue;
+    font-size: calc(0.02 * (100vmin - (2 * var(--border))));
+}
+#main-menu-saves-panel h2 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+#main-menu-saves-panel ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    text-align: left;
+}
+#main-menu-saves-panel button {
+    padding: 5%;
+    margin: -5% 0 -5% 0;
+    width: 100%;
+    left: 0;
+    background-color: lightblue;
+}
+#main-menu-saves-panel button:hover {
+    background-color: rgb(148, 183, 196);
+}
+#main-menu-saves-panel button:active {
+    background-color: rgb(137, 170, 182);
+}
